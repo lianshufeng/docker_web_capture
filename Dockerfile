@@ -13,8 +13,8 @@ RUN set -xe \
 FROM lianshufeng/jdk
 COPY --from=builder /opt/capture/capture.jar /opt/capture/capture.jar
 
-ARG Fonts_URL="http://dl.jpy.wang/Fonts.zip"
-ARG Chrome_URL="https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm"
+ARG Fonts_URL="https://download.jpy.wang/Fonts.zip"
+ARG Chrome_URL="https://download.jpy.wang/chrome/google-chrome-stable_current_x86_64.rpm"
 
 #安装工具库
 RUN yum install unzip wget curl fontconfig -y
